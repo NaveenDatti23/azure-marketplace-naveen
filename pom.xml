@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.NaveenDatti23</groupId>
     <artifactId>commercial-marketplace-naveen</artifactId>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
 
     <name>Microsoft Azure client library for Marketplace</name>
     <description>This package contains the Microsoft Azure Marketplace client library.</description>
@@ -28,7 +28,6 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <sha>0000000</sha> <!-- This value is set via -D -->
     </properties>
-
 
     <build>
         <resources>
@@ -62,6 +61,23 @@
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <source>8</source>
+                    <detectJavaApiLink>false</detectJavaApiLink>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

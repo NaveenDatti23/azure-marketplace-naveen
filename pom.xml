@@ -5,7 +5,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.microsoft.azure</groupId>
-    <artifactId>commercial-marketplace-client-java</artifactId>
+    <artifactId>commercial-marketplace-naveen</artifactId>
     <version>1.4.0</version>
 
     <name>Microsoft Azure client library for Marketplace</name>
